@@ -6,4 +6,4 @@ license = "MIT"
 description = "TODO"
 
 [dependencies]
-polywrap_core = { path = "../core" }
+polywrap_core = "0.1.0"

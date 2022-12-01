@@ -7,7 +7,7 @@ description = "TODO"
 
 [dependencies]
 thiserror = "1.0.37"
-polywrap_msgpack = {path = "../msgpack"}
+polywrap_msgpack = "0.1.0"
 serde = {version = "1.0.145", features = ["derive"]}
 serde_json = "1.0.87"
 semver = "1.0.14"

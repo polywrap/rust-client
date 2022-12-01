@@ -8,11 +8,11 @@ description = "TODO"
 [dependencies]
 thiserror = "1.0.37"
 async-trait = "0.1.57"
-polywrap_msgpack = { path = "../../msgpack" }
-polywrap_core = { path = "../../core" }
-polywrap_plugin = { path = "../../plugin" }
+polywrap_msgpack = "0.1.0"
+polywrap_core = "0.1.0"
+polywrap_plugin = "0.1.0"
 serde = {version = "1.0.145", features = ["derive"]}
-polywrap_manifest = { path = "../../manifest" }
+polywrap_manifest = "0.1.0"
 serde_json = "1.0.87"
 ureq = "2.3.0"
 num-bigint = "0.4.3"
@@ -21,4 +21,4 @@ futures = "0.3.24"
 rm_rf = "0.6.2"
 
 [dev-dependencies]
-polywrap_client = {path = "../../client"}
+polywrap_client = "0.1.0"

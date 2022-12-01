@@ -8,9 +8,9 @@ description = "TODO"
 [dependencies]
 thiserror = "1.0.37"
 async-trait = "0.1.57"
-polywrap_core = {path = "../core"}
-polywrap_manifest = {path = "../manifest"}
-polywrap_msgpack = { path = "../msgpack" }
+polywrap_core = "0.1.0"
+polywrap_manifest = "0.1.0"
+polywrap_msgpack = "0.1.0"
 serde_json = "1.0.87"
 rmp-serde = "1.1.1"
 futures = "0.3.24"
@@ -18,4 +18,4 @@ polywrap_paste = "1.0.0"
 
 [dev-dependencies]
 serde = {version = "1.0.145", features = ["derive"]}
-polywrap_client = { path = "../client" }
+polywrap_client = "0.1.0"

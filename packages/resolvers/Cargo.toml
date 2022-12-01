@@ -10,8 +10,8 @@ thiserror = "1.0.37"
 regex = "1.6.0"
 async-trait = "0.1.57"
 pathdiff = "0.2.1"
-polywrap_core = {path = "../core"}
-polywrap_wasm = {path = "../wasm"}
-polywrap_msgpack = {path = "../msgpack"}
+polywrap_core = "0.1.0"
+polywrap_wasm = "0.1.0"
+polywrap_msgpack = "0.1.0"
 futures = "0.3.24"
 serde = "1.0.145"
