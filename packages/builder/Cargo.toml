@@ -2,6 +2,8 @@
 name = "polywrap_client_builder"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "TODO"
 
 [dependencies]
 async-trait = "0.1.57"

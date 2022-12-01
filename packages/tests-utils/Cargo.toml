@@ -2,6 +2,8 @@
 name = "polywrap_tests_utils"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "TODO"
 
 [dependencies]
 polywrap_core = { path = "../core" }
