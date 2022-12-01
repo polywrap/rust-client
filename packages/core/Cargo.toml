@@ -17,5 +17,5 @@ jsonschema = "0.16.1"
 rmp-serde = "1.1.1"
 futures = "0.3.24"
 
-[dev-dependencies]
-mockall = "0.11.2"
+# [dev-dependencies]
+# mockall = "0.11.2"

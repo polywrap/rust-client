@@ -20,5 +20,5 @@ bigdecimal = "0.3.0"
 futures = "0.3.24"
 rm_rf = "0.6.2"
 
-[dev-dependencies]
-polywrap_client = "0.1.0"
+# [dev-dependencies]
+# polywrap_client = "0.1.0"

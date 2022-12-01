@@ -16,6 +16,6 @@ rmp-serde = "1.1.1"
 futures = "0.3.24"
 polywrap_paste = "1.0.0"
 
-[dev-dependencies]
-serde = {version = "1.0.145", features = ["derive"]}
-polywrap_client = "0.1.0"
+# [dev-dependencies]
+# serde = {version = "1.0.145", features = ["derive"]}
+# polywrap_client = "0.1.0"
