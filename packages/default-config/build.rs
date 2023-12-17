@@ -1,7 +1,12 @@
-use std::fs;
 use polywrap_wasm::{self, wasm_module::WasmModule};
+use std::fs;
 
 fn main() {
+    // If the package is being built by docs.rs, we skip compiling and serializing the embedded wraps
+    if std::env::var("DOCS_RS").is_ok() {
+        return;
+    }
+
     // Compile and serialize all wasm modules in the src/embeds directory
     // It's faster to deserialize from a serialized module than to compile from a wasm file
     for directory in fs::read_dir("./src/embeds").unwrap().into_iter() {
@@ -14,8 +19,15 @@ fn main() {
         let compiled_module = WasmModule::WasmBytecode(wasm.into()).compile().unwrap();
         let serialized_module = compiled_module.serialize().unwrap();
 
-        fs::write(format!("{}/wrap.serialized", directory.path().to_str().unwrap()), serialized_module.serialize_for_storage()).unwrap();
+        fs::write(
+            format!("{}/wrap.serialized", directory.path().to_str().unwrap()),
+            serialized_module.serialize_for_storage(),
+        )
+        .unwrap();
 
-        println!("cargo:rerun-if-changed={}", format!("{}/wrap.wasm", directory.path().to_str().unwrap()));
+        println!(
+            "cargo:rerun-if-changed={}",
+            format!("{}/wrap.wasm", directory.path().to_str().unwrap())
+        );
     }
 }
